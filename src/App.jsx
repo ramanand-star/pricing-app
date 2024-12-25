@@ -1,25 +1,16 @@
-import React from 'react';
-import UploadFile from './UploadFile';
-import SearchRecords from './SearchRecords';
-import UpdateRecord from './UpdateRecord';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import UploadFile from './UploadFile.jsx';
+import SearchRecords from './SearchRecords.jsx';
+import UpdateRecord from './UpdateRecord.jsx';
 import './App.css';
-
-// const App = () => {
-//   return (
-//     <div>
-//       <h1>Pricing Records Management</h1>
-//       <UploadFile />
-//       <SearchRecords />
-//       <UpdateRecord />
-//     </div>
-//   );
-// };
 
 function App() {
   return (
     <div className="App">
       <h1 className="title">Pricing Records Management</h1>
-      <p>This is a sample application.</p>
+      <p className='subtitle'>This is a sample application</p>
          <UploadFile />
          <SearchRecords />
          <UpdateRecord />
@@ -27,4 +18,4 @@ function App() {
   );
 };
 
-export default App;
+export default App
